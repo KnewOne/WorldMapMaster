@@ -5,6 +5,9 @@
   "authors": [
     "ZigTheHedge, z3r0-toru"
   ],
+  "Contributors": [
+    "TheInsanityGod"
+  ],
   "description": "A couple of tweaks and QOL additions for the World Map",
   "requiredOnClient": false,
   "requiredOnServer": false,
