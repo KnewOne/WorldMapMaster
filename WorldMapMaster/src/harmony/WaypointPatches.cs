@@ -54,7 +54,10 @@ public static class WaypointPatches
 
     [HarmonyPatch(typeof(GuiDialogAddWayPoint), "TryOpen")]
     [HarmonyPrefix]
-    public static void DefaultWaypointPositionToPlayerPosition(ICoreClientAPI ___capi, ref Vec3d ___WorldPos) => ___WorldPos ??= ___capi.World.Player.Entity.Pos.XYZ;
+    public static void DefaultWaypointPositionToPlayerPosition(GuiDialogAddWayPoint __instance, ICoreClientAPI ___capi)
+    {
+        __instance.WorldPos ??= ___capi.World.Player.Entity.Pos.XYZ;
+    }
 
     [HarmonyPatch(typeof(WorldMapManager), "RegisterDefaultMapLayers")]
     [HarmonyTranspiler]

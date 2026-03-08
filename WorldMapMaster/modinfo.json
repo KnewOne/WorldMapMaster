@@ -6,13 +6,14 @@
     "ZigTheHedge, z3r0-toru"
   ],
   "Contributors": [
-    "TheInsanityGod"
+    "TheInsanityGod",
+    "KnewOne"
   ],
   "description": "A couple of tweaks and QOL additions for the World Map",
   "requiredOnClient": false,
   "requiredOnServer": false,
-  "version": "1.0.4-pre.3",
+  "version": "1.0.5",
   "dependencies": {
-    "game": "1.19.8-1.20.0-x"
+    "game": "1.22.0-rc.1"
   }
 }
